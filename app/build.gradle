@@ -4,12 +4,13 @@ plugins {
 
 android {
     namespace 'com.danon.radiorecordingapp'
-    compileSdk 35
+    compileSdk 36
 
     defaultConfig {
         applicationId "com.danon.radiorecordingapp"
         minSdk 24
-        targetSdk 35
+        //noinspection EditedTargetSdkVersion
+        targetSdk 36
         versionCode 1
         versionName "1.0"
 
@@ -59,7 +60,6 @@ dependencies {
     implementation libs.converter.gson
 
     // Basic Android UI components
-    implementation libs.appcompat.v161
     implementation libs.material.v1100
     implementation libs.constraintlayout
 
