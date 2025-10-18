@@ -1,0 +1,45 @@
+[versions]
+agp = "8.10.0"
+appcompatVersion = "1.6.1"
+constraintlayout = "2.2.1"
+core = "1.17.0"
+dexter = "6.2.3"
+documentfile = "1.1.0"
+exoplayer = "2.19.1"
+ffmpegmediametadataretriever = "1.0.14"
+junit = "4.13.2"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+appcompat = "1.7.1"
+lifecycleService = "2.9.4"
+material = "1.13.0"
+materialVersion = "1.10.0"
+retrofit = "2.9.0"
+workRuntime = "2.10.5"
+
+[libraries]
+appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+core = { module = "androidx.core:core", version.ref = "core" }
+dexter = { module = "com.karumi:dexter", version.ref = "dexter" }
+documentfile = { module = "androidx.documentfile:documentfile", version.ref = "documentfile" }
+exoplayer = { module = "com.google.android.exoplayer:exoplayer", version.ref = "exoplayer" }
+exoplayer-core = { module = "com.google.android.exoplayer:exoplayer-core", version.ref = "exoplayer" }
+exoplayer-dash = { module = "com.google.android.exoplayer:exoplayer-dash", version.ref = "exoplayer" }
+exoplayer-hls = { module = "com.google.android.exoplayer:exoplayer-hls", version.ref = "exoplayer" }
+exoplayer-ui = { module = "com.google.android.exoplayer:exoplayer-ui", version.ref = "exoplayer" }
+ffmpegmediametadataretriever = { module = "com.github.wseemann:FFmpegMediaMetadataRetriever", version.ref = "ffmpegmediametadataretriever" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+lifecycle-service = { module = "androidx.lifecycle:lifecycle-service", version.ref = "lifecycleService" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+material-v1100 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+work-runtime = { module = "androidx.work:work-runtime", version.ref = "workRuntime" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+
