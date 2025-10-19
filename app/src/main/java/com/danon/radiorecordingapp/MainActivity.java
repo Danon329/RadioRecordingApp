@@ -11,13 +11,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main); // This connects to XML layout
 
+        // TODO: Outsource this into own UI Package
         // Init UI components
         TextView titleText = findViewById(R.id.titleText);
         Button testButton = findViewById(R.id.recordButton);
 
         // Set up button click listener
         testButton.setOnClickListener(view -> {
-            titleText.setText("Recoring...");
+            titleText.setText("Recording...");
             testButton.setText("Stop Recording");
         });
     }
