@@ -6,38 +6,30 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/titleText"
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/timeSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="@string/app_name"
-        android:textSize="24sp"
-        android:textStyle="bold"/>
-
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:text = "Begin">
+    </androidx.appcompat.widget.SwitchCompat>
 
     <TimePicker
         style="@android:style/Widget.Material.Light.TimePicker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:timePickerMode="spinner">
+        android:timePickerMode="spinner"
+        android:layout_margin="50dp">
     </TimePicker>
 
     <Button
         android:id="@+id/recordButton"
         style="@style/Widget.Material3.Button"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="Start Recording"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/statusText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Ready to record"
-        android:textSize="16sp" />
+        android:textSize="36dp">
+    </Button>
 
 </LinearLayout>

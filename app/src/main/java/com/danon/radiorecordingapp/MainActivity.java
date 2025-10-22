@@ -2,8 +2,8 @@ package com.danon.radiorecordingapp;
 
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -13,13 +13,26 @@ public class MainActivity extends AppCompatActivity {
 
         // TODO: Outsource this into own UI Package
         // Init UI components
-        TextView titleText = findViewById(R.id.titleText);
         Button testButton = findViewById(R.id.recordButton);
+        SwitchCompat timeSwitch = findViewById(R.id.timeSwitch);
+
+        timeSwitch.setOnClickListener(view -> {
+            if (timeSwitch.isChecked()) {
+                timeSwitch.setText("End");
+            } else if (!timeSwitch.isChecked()) {
+                timeSwitch.setText("Begin");
+            }
+        });
 
         // Set up button click listener
+        testButton.setText("Start");
         testButton.setOnClickListener(view -> {
-            titleText.setText("Recording...");
-            testButton.setText("Stop Recording");
+            // TODO: Rethink button logic
+            if (testButton.getText().equals("Start")) {
+                testButton.setText("Stop");
+            } else if (testButton.getText().equals("Stop")) {
+                testButton.setText("Start");
+            }
         });
     }
 }
